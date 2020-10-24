@@ -8,7 +8,7 @@
 	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<style>
+	<style>
 body{
 background-color:SlateGray;
 }
@@ -25,11 +25,17 @@ background-color:SlateGray;
 	background-color:MediumSlateBlue;
 	
 }
+
+#erro{
+	margin-top:10%
+	margin-left:200px;
+;}
 @media only screen and (max-width: 600px) {
   body {
     background-color: SlateGray;
    	
   }
+}
 .row{
 	margin-left:10px;
 }
@@ -67,6 +73,7 @@ button{
 		<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#letra" onclick="letraAPI()">Buscar</button>
 		<p id="letra" class="text-white">
 		</div>
+		<p id="erro" class="text-white">
 	</div>	
 </div>
 
