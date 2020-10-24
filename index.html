@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+          <title>api</title>
+	  <meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<style>
+body{
+background-color:SlateGray;
+}
+.row{
+	margin-left:15%;
+	margin-top:10%;
+	
+}
+#letra{
+	margin-left:-15%;
+	margin-top:5%;	
+}
+.jumbotron{
+	background-color:MediumSlateBlue;
+	
+}
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: SlateGray;
+   	
+  }
+.row{
+	margin-left:10px;
+}
+
+#letra{
+	margin-top:10%;
+	margin-left:1px;	
+}
+
+h1{
+	font-family:arial;
+	margin-left:15%;
+}
+#musica{
+	margin-left:10px;
+}
+
+button{
+	margin-left:10px;
+	margin-top:-4px;
+	height:45px;
+}
+</style>
+
+</head>
+<body>
+
+<script src="app.js"></script>
+<div class="jumbotron"> 
+      <div class="container-fluid">
+	<h1>Buscar letras</h1>
+		<div class="row">
+		<input id="cantor" class="form-control mr-sm-3 col-4 " type="search" placeholder="Cantor" aria-label="Cantor">
+		<input id="musica" class="form-control mr-sm-3 col-4" type="search" placeholder="Musica" aria-label="Musica">	
+		<button type="button" class="btn btn-primary" data-toggle="collapse" data-target="#letra" onclick="letraAPI()">Buscar</button>
+		<p id="letra" class="text-white">
+		</div>
+	</div>	
+</div>
+
+</body>
+
+</html>
